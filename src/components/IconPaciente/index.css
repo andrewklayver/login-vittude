@@ -1,0 +1,10 @@
+.tab-container{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;   
+}
+
+.image{
+    width: 2em;
+    padding: 1vh;
+}
