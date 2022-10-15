@@ -1,19 +1,21 @@
 import { useEffect, useState } from 'react';
-import { useFormik } from 'formik';
+import { useFormik, Formik, Form, Field, ErrorMessage } from 'formik';
 import "./Login.css"
 import { basicSchema } from '../../schemas';
 import IconPaciente from '../IconPaciente';
 
-const onSubmit = (values, actions) => {
-    console.log("values");
-    console.log("actions");
+const onSubmit = async (values, actions) => {
+    console.log(values);
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm()
 };
 
 function Login(){
-    const {values, errors,touched, handleBlur, handleChange, handleSubmit} = useFormik({
+    const {values, errors,touched,isSubmitting, handleBlur, handleChange, handleSubmit} = useFormik({
       initialValues:{
-        userEmail: '',
-        userPassword: '',
+        email: '',
+        password: '',
     },   
     validationSchema:basicSchema,  
     onSubmit,
@@ -25,38 +27,44 @@ console.log(errors);
         <div className='cadastro'>
        
          <IconPaciente />
-        <form onSubmit={handleSubmit} className="form" >
+        <form onSubmit={handleSubmit} autoComplete="off" className="form" >
            
             <div className="formField">
-                <label htmlFor="userEmail">Seu email</label>
-                <input className="input_cadastro" 
+              <label>Seu email</label>
+                <input 
+                id="email"
                 type="email" 
                 placeholder="Digite seu email..." 
-                name="userEmail" 
-                id="userEmail"
                 onChange={handleChange}
-                value={values.userEmail}
+                value={values.email}
                 onBlur={handleBlur}
+                className={errors.email ? "input_cadastro" : "" }
                  /> 
-                 {errors.userEmail && touched.userEmail ? <div>{errors.userEmail}</div> : null}
-                 
-                 <label htmlFor="userPassword">Sua senha</label>
-                 <input className="input_cadastro" 
+              <div>
+              {errors.email && touched.email && <p className="error">{errors.email}</p>}
+            
+              </div>
+              
+                 <label>Sua senha</label>
+                 <input
+                id="password"
                 type="password" 
                 placeholder="Digite sua senha..."
-                name="userPassword" 
-                id="userPassword"
                 onChange={handleChange}
-                value={values.userPassword} 
-                onBlur={handleBlur} />
-                {errors.userPassword && touched.userPassword ? <p>{errors.userPassword}</p> : null}
+                value={values.password} 
+                onBlur={handleBlur} 
+                className={errors.password ? "input_cadastro" : "" } />
+            
+              <div>
+              {errors.password && touched.password ? <p>{errors.password}</p> : null}
+              </div>                      
             </div>             
 
             <div className="enviar-cadastro">
             <div className="link-login">
-                 <a href="/cadastro">Esqueci minha senha</a>
+                 <a href="#">Esqueci minha senha</a>
                 </div>
-                <button className="button" type="submit">Entrar</button>            
+                <button disabled={isSubmitting} className="button" type="submit">Entrar</button>            
             </div>
         </form>
     </div>     

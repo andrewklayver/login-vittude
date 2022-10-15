@@ -13,14 +13,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
          <Header />
          <Body />
-       {/* <Routes> */}
-        {/* <Route path=""element={<Body /> } /> */}
-       {/* </Routes> */}
          <Footer />
-    </BrowserRouter>
+
     </div>
   );
 }
