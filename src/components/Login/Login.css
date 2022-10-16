@@ -4,91 +4,82 @@ body {
 
     font-family: 'Open Sans', sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+ 
   }
-
-*{
-  margin: 10;
-}
-
-.cadastro {
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  padding: 0 4rem;
-  height: 60vh;
-  width: 35vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-usuario{
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0.75em 8em;
-  color: #000;
-  text-decoration: underline;  
-}
-
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-}
-
-.formField {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.input_cadastro {
+  
+  .cinza{
+    background-color: #f5f5f5;
+    height: 60vh;
+    width: 45vw;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    width: 30em;
-    height: 2em;
-    padding: 0.20em 1.3em;
-    margin-top: 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+  }
+
+.cadastro {
+  display: flex;
+  text-align: center;
+  margin-top: 2%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-input.input_cadastro,
-select.input_cadastro {
-    
-      border-color: #fc8181;  
+.text-login{
+  padding: 0.50em;
+}
+
+.formField{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  background-color: #ffff;
+  padding: 2%;
+  margin: 2%;
+  text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-left:20px;
+}
+
+.formField input{
+ border: none;
+ padding: 2%
+}
+
+.formField input:focus{
+  outline: 0;
+}
+
+.formField label{
+  color: #ff6a58;
+}
+.error{
+  color: red;
+  font-size: 15px;
 }
 
 .button {
     justify-content: center;
     border: none;
     padding: 1em;
-    width: 80vh;
+    width: 100%;
     background-color: #ff6a58;
+    color: #ffff;
 }
 
-button:hover {
-  background-color: var(--azul-base);
-  color: var(--branco-base);
-  transition: 300ms;
-
-}
 
 .link-login {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 10px;
+  padding:10px 20px;
 }
 
 .link-login a {
   color: blue;
   font-weight: 500;
+  font-size: 15px;
   text-decoration: none;
 }
 
