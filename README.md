@@ -7,50 +7,15 @@
 
 ## Linguagem: <Javascript>
 
-Framework: <Formik>
+# 📁 Acesso ao projeto
 
-## Descrição
-<>
+**https://login-vittude-teste.onrender.com/**
 
-Pré-requisitos
-Antes de iniciar, se assegure que possui os requisitos abaixo:
+# 🛠️ Abrir e rodar o projeto
 
-<Requisito 1>
-<Requisito 2>
-<Requisito 3>
-<Requisito 4>
-<Requisito 5>
-Compilação/Configuração
-Para compilar/configurar este projeto, siga as seguintes etapas:
+**Passo 1: clonar o repositório na sua máquinha**
 
-<Etapa 1>
-<Etapa 2>
-<Etapa 3>
-<Etapa 4>
-<Etapa 5>
-Instalação/Execução
-Para instalar/executar este projeto, siga as seguintes etapas:
+**Passo 2: abrir em um programa de desenvolvimento**
 
-<Etapa 1>
-<Etapa 2>
-<Etapa 3>
-<Etapa 4>
-<Etapa 5>
-
-
-### Analyzing the Bundle Size
-
-
-### Making a Progressive Web App
-
-
-
-### Advanced Configuration
-
-
-
-### Deployment
-
-
-### `npm run build` fails to minify
-
+**Passo 3: abrir o terminal e usar o comando npm start**
+  
