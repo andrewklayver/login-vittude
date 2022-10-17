@@ -5,15 +5,18 @@
 
 
 # ✔️ Técnicas e tecnologias utilizadas
-- <Javascript>
-- <React Js>
-- <Formik>
-- <Yup>
-- <MockAPI>
-- <Html e Css>
-# 📁 Acesso ao projeto
+- Javascript
+- React Js
+- Formik
+- Yup
+- MockAPI
+- Html e Css
 
+
+# 📁 Acesso ao projeto
 **https://login-vittude-teste.onrender.com/**
+
+
 
 # 🛠️ Abrir e rodar o projeto
 
