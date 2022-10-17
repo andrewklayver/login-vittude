@@ -1,30 +1,36 @@
-# Tela de Login e Validação de usuário com Formik, Yup e React
+<h1 align="center"> Tela de Login e Validação de usuário com Formik, Yup e React </h1>
 
+Linguagem: <linguagem>
 
-## Available Scripts
+Framework: <framework, se houver>
 
+Descrição
+<Informe resumidamente o que é o projeto>
 
+Pré-requisitos
+Antes de iniciar, se assegure que possui os requisitos abaixo:
 
-### `npm start`
+<Requisito 1>
+<Requisito 2>
+<Requisito 3>
+<Requisito 4>
+<Requisito 5>
+Compilação/Configuração
+Para compilar/configurar este projeto, siga as seguintes etapas:
 
+<Etapa 1>
+<Etapa 2>
+<Etapa 3>
+<Etapa 4>
+<Etapa 5>
+Instalação/Execução
+Para instalar/executar este projeto, siga as seguintes etapas:
 
-### `npm test`
-
-
-
-### `npm run build`
-
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-
-## Learn More
-
-
-
-### Code Splitting
+<Etapa 1>
+<Etapa 2>
+<Etapa 3>
+<Etapa 4>
+<Etapa 5>
 
 
 ### Analyzing the Bundle Size
