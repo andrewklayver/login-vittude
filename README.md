@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Tela de Login e Validação de usuário com Formik, Yup e React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
