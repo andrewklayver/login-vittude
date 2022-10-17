@@ -3,7 +3,7 @@
 
 <img width="1279" alt="Captura de Tela 2022-10-17 às 15 03 18" src="https://user-images.githubusercontent.com/101599209/196249974-f59e745c-e4f8-4e7a-9f53-40d0ac7ae129.png">
 <br>
-<br>
+
 
 # ✔️ Técnicas e tecnologias utilizadas
 - Javascript
@@ -12,10 +12,12 @@
 - Yup
 - MockAPI
 - Html e Css
+<br>
 
 
 # 📁 Acesso ao projeto
 - Você pode acessar o projeto clicando [aqui](https://login-vittude-teste.onrender.com/).
+<br>
 
 
 
