@@ -3,13 +3,24 @@ import { useFormik, Formik, Form, Field, ErrorMessage } from 'formik';
 import "./Login.css"
 import { basicSchema } from '../../schemas';
 import IconPaciente from '../IconPaciente';
+import axios from "axios"; 
+
 
 const onSubmit = async (values, actions) => {
   console.log(values);
   console.log(actions);
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm()
-  window.alert("Você está logado")
+  await axios.get('https://634b29e533bb42dca41161ad.mockapi.io/login/v1/users')
+  .then(response => {
+    if(values.email === response.data.email && values.password === response.data.senha){
+      window.alert("Você está logado")
+    }else{
+      window.alert(`Usuário não existe`)
+    }
+  })
+  .catch(error => console.log(error))
+  
 };
 
 function Login() {
@@ -22,6 +33,9 @@ function Login() {
     onSubmit,
   });
 
+  // function axios(){
+    
+  // }
   
 
   return (
