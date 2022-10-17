@@ -14,7 +14,7 @@
 
 
 # 📁 Acesso ao projeto
-** Você pode acessar o projeto clicando [aqui](https://login-vittude-teste.onrender.com/).
+- Você pode acessar o projeto clicando [aqui](https://login-vittude-teste.onrender.com/).
 
 
 
