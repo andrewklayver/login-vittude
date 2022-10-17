@@ -1,5 +1,8 @@
 <h1 align="center"> Tela de Login e Validação de usuário com Formik, Yup e React </h1>
 
+<img width="1280" alt="Captura de Tela 2022-10-17 às 15 02 04" src="https://user-images.githubusercontent.com/101599209/196249784-e4d5b828-4d5c-4eeb-aad2-8afd69f78777.png">
+
+
 Linguagem: <linguagem>
 
 Framework: <framework, se houver>
