@@ -9,6 +9,7 @@ const onSubmit = async (values, actions) => {
   console.log(actions);
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm()
+  window.alert("Você está logado")
 };
 
 function Login() {
@@ -21,7 +22,7 @@ function Login() {
     onSubmit,
   });
 
-  console.log(errors);
+  
 
   return (
 

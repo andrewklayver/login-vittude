@@ -1,9 +1,8 @@
-import './App.css';
-import Body from './components/Body/Body';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+// eslint-disable-next-line 
 import axios from "axios"; 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import RoutesApp from './routes';
+
+
 
 // function getTarefas(){
 //   axios.get()
@@ -13,10 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-         <Header />
-         <Body />
-         <Footer />
-
+      <RoutesApp />
     </div>
   );
 }
